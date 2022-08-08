@@ -249,9 +249,9 @@ const wrapperStyle = computed(() => {
     ...mainStyle.value,
   };
   if (background.startsWith("http")) {
-    style.background = `url(${background})`;
+    style.backgroundImage = `url(${background})`;
   } else {
-    style.background = background;
+    style.backgroundColor = background;
   }
   return style;
 });
